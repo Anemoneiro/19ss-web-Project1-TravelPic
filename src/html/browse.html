@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>浏览 - TravelPic</title>
+        <meta name="description" content="browse page">
+        <meta name="author" content="Xinran Duan">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="../css/reset.css" rel="stylesheet" type="text/css">
+        <link href="../css/header&footer.css" rel="stylesheet" type="text/css">
+        <link href="../css/piccss.css" rel="stylesheet" type="text/css">
+        <link href="../css/browse.css" rel="stylesheet" type="text/css">
+        <script src="../js/browse.js"></script>
+        <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+    </head>
+
+    <body>
+        <div id="root">
+            <header>
+                <nav>
+                    <div class="logo">
+                        <a href="homepage.html">
+                            <img src="../../img/icons/travelpic_logo.png" alt="TravelPic_logo" class="TravelPic_logo">
+                        </a>
+                    </div>
+                    <div class="HeaderTabs">
+                        <ul>
+                            <li><a href="homepage.html" class="topButton" id="Homepage">首页</a></li>
+                            <li><a href="browse.html" class="topButton" id="Browser">浏览</a></li>
+                            <li><a href="search.html" class="topButton" id="Search">搜索</a></li>
+                        </ul>
+                    </div>
+                </nav>
+                <div class="UserInfo">
+                    <ul>
+                        <li><a href="" class="topButton" id="Personal">个人中心</a>
+                            <div class="dropdown_col">
+                                <ul>
+                                    <li><a href="upload.html" class="topUserButton" id="Upload">上传</a> </li>
+                                    <li><a href="myphotos.html" class="topUserButton" id="MyPhoto">我的照片</a></li>
+                                    <li><a href="myfavorites.html" class="topUserButton" id="MyFavor">我的收藏</a></li>
+                                    <li><a href="../../index.html" class="topUserButton" id="Login">登入</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </header>
+            <div class="nav-browser">
+                <div class="nav-box-search">
+                    <div class="box-header">
+                        <h2 class="box-title">按标题搜索</h2>
+                    </div>
+                    <div class="box-body">
+                        <div class="navSearch">
+                            <input type="text" id="navSearchText"></li>
+                            <input type="button" id="navSearchBtn" onclick="click_Searchbtn()"></li>
+                        </div>
+                    </div>
+                </div>
+                <div class="nav-box">
+                    <div class="box-header">
+                        <h2 class="box-title">热门内容</h2>
+                    </div>
+                    <div class="box-body">
+                        <div class="navHotContent">
+                            <ul>
+                                <li>
+                                    <input type="button" class="navHotBtn" id="Animal" value="动物" onclick="click_Hotbtn()">
+                                </li>
+                                <li>
+                                    <input type="button" class="navHotBtn" id="Building" value="建筑" onclick="click_Hotbtn()">
+                                </li>
+                                <li>
+                                    <input type="button" class="navHotBtn" id="Scenery" value="风景" onclick="click_Hotbtn()">
+                                </li>
+                                <li>
+                                    <input type="button" class="navHotBtn" id="People" value="人物" onclick="click_Hotbtn()">
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="nav-box">
+                    <div class="box-header">
+                        <h2 class="box-title">热门国家</h2>
+                    </div>
+                    <div class="box-body">
+                        <div class="navHotCountry">
+                            <ul>
+                                <li>
+                                    <input type="button" class="navHotBtn" id="China" value="中国" onclick="click_Hotbtn()">
+                                </li>
+                                <li>
+                                    <input type="button" class="navHotBtn" id="USA" value="美国" onclick="click_Hotbtn()">
+                                </li>
+                                <li>
+                                    <input type="button" class="navHotBtn" id="UK" value="英国" onclick="click_Hotbtn()">
+                                </li>
+                                <li>
+                                    <input type="button" class="navHotBtn" id="Japan" value="日本" onclick="click_Hotbtn()">
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="nav-box">
+                    <div class="box-header">
+                        <h2 class="box-title">热门城市</h2>
+                    </div>
+                    <div class="box-body">
+                        <div class="navHotCity">
+                            <ul>
+                                <li>
+                                    <input type="button" class="navHotBtn" id="Beijing" value="北京" onclick="click_Hotbtn()">
+                                </li>
+                                <li>
+                                    <input type="button" class="navHotBtn" id="NewYork" value="纽约" onclick="click_Hotbtn()">
+                                </li>
+                                <li>
+                                    <input type="button" class="navHotBtn" id="Tokyo" value="东京" onclick="click_Hotbtn()">
+                                </li>
+                                <li>
+                                    <input type="button" class="navHotBtn" id="Paris" value="巴黎" onclick="click_Hotbtn()">
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="main-browse">
+                <div class="box-header">
+                    <h2 class="box-title">筛选</h2>
+                </div>
+                <div class="box-body">
+                    <div class="box-body-content">
+                        <!--box-body-filter-stars-here-->
+                        <div class="box-body-filter">
+                            <ul>
+                                <li><div class="dropdown-filter">
+                                        <select name="content-filter">
+                                            <option>按主题筛选</option>
+                                            <option value="Animal">动物</option>
+                                            <option value="Building">建筑</option>
+                                            <option value="Scenery">风景</option>
+                                            <option value="People">人物</option>
+                                        </select>
+                                    </div>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <div class="dropdown-filter">
+                                        <select name="country-filter" onChange="city_change(this.value)">
+                                            <option>按国家筛选</option>
+                                            <option value="China">中国</option>
+                                            <option value="Japan">日本</option>
+                                            <option value="Italy">意大利</option>
+                                            <option value="America">美国</option>
+                                        </select>
+                                    </div>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <div class="dropdown-filter">
+                                        <select name="city-filter" id="city-filter">
+                                            <option>按城市筛选</option>
+                                        </select>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <!--box-body-filter-here-->
+
+                        <div class="box-body-filteResult">
+                            <div class="picDisplayBox-filter">
+                                <div class="picDisplayBox-detail">
+                                    <a href="./details.html">
+                                        <div class="realPic" id="picA">
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="picDisplayBox-filter">
+                                <div class="picDisplayBox-detail">
+                                    <a href="./details.html">
+                                        <div class="realPic" id="picB">
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="picDisplayBox-filter">
+                                <div class="picDisplayBox-detail">
+                                    <a href="./details.html">
+                                        <div class="realPic" id="picC">
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="picDisplayBox-filter">
+                                <div class="picDisplayBox-detail">
+                                    <a href="./details.html">
+                                        <div class="realPic" id="picD">
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="picDisplayBox-filter">
+                                <div class="picDisplayBox-detail">
+                                    <a href="./details.html">
+                                        <div class="realPic" id="picE">
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="picDisplayBox-filter">
+                                <div class="picDisplayBox-detail">
+                                    <a href="./details.html">
+                                        <div class="realPic" id="picF">
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="picDisplayBox-filter">
+                                <div class="picDisplayBox-detail">
+                                    <a href="./details.html">
+                                        <div class="realPic" id="picA">
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="picDisplayBox-filter">
+                                <div class="picDisplayBox-detail">
+                                    <a href="./details.html">
+                                        <div class="realPic" id="picB">
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="picDisplayBox-filter">
+                                <div class="picDisplayBox-detail">
+                                    <a href="./details.html">
+                                        <div class="realPic" id="picC">
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="picDisplayBox-filter">
+                                <div class="picDisplayBox-detail">
+                                    <a href="./details.html">
+                                        <div class="realPic" id="picD">
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="picDisplayBox-filter">
+                                <div class="picDisplayBox-detail">
+                                    <a href="./details.html">
+                                        <div class="realPic" id="picE">
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="picDisplayBox-filter">
+                                <div class="picDisplayBox-detail">
+                                    <a href="./details.html">
+                                        <div class="realPic" id="picF">
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="turnPage">
+                                <a href="#"><</a> <span>1</span> <a href="#">2</a> <a href="#">3</a> <a href="#">4</a> <a href="#">5</a> <a href="#">></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer class="copyright">
+                Copyright© by Xinran Duan. All Rights Reserved. 备案号：沪ORZ备18307130295号-16
+            </footer>    
+        </div>
+    </body>
+</html>

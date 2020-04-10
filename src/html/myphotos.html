@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>我的照片 - TravelPic</title>
+        <meta name="description" content="myphotos page">
+        <meta name="author" content="Xinran Duan">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="../css/reset.css" rel="stylesheet" type="text/css">
+        <link href="../css/header&footer.css" rel="stylesheet" type="text/css">
+        <link href="../css/piccss.css" rel="stylesheet" type="text/css">
+        <link href="../css/myphotos.css" rel="stylesheet" type="text/css">
+        <script src="../js/myphotos.js"></script>
+    </head>
+
+    <body>
+        <div id="root">
+            <header>
+                <nav>
+                    <div class="logo">
+                        <a href="homepage.html">
+                            <img src="../../img/icons/travelpic_logo.png" alt="TravelPic_logo" class="TravelPic_logo">
+                        </a>
+                    </div>
+                    <div class="HeaderTabs">
+                        <ul>
+                            <li><a href="homepage.html" class="topButton" id="Homepage">首页</a></li>
+                            <li><a href="browse.html" class="topButton" id="Browser">浏览</a></li>
+                            <li><a href="search.html" class="topButton" id="Search">搜索</a></li>
+                        </ul>
+                    </div>
+                </nav>
+                <div class="UserInfo">
+                    <ul>
+                        <li><a href="" class="topButton" id="Personal">个人中心</a>
+                            <div class="dropdown_col">
+                                <ul>
+                                    <li><a href="upload.html" class="topUserButton" id="Upload">上传</a> </li>
+                                    <li><a href="myphotos.html" class="topUserButton" id="MyPhoto">我的照片</a></li>
+                                    <li><a href="myfavorites.html" class="topUserButton" id="MyFavor">我的收藏</a></li>
+                                    <li><a href="../../index.html" class="topUserButton" id="Login">登入</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </header>
+
+            <div class="main-myPhotos">
+                <div class="box-header">
+                    <h2 class="box-title">我的照片</h2>
+                </div>
+                <div class="box-body">
+                    <div class="box-body-content">
+                        <!--box-body-myphotos-stars-here-->
+                        <div class="box-body-myphotos">
+                            <div class="box-body-myItem">
+                                <a class="picDisplayBox-detail" href="./details.html">
+                                    <div class="realPic" id="picA">
+                                    </div>
+                                </a>
+                                <div class="picDisplayBox-item">
+                                    <h4 class="picDisplayBox-titie">Title</h4>
+                                    <p>discription</p>
+                                    <div class="box-body-Btn">
+                                        <button type="button" id="modifyBtn" onclick="modifyPhoto()">修改</button>
+                                        <button type="button" id="deleteBtn" onclick="deletePhoto()">删除</button>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <div class="box-body-myItem">
+                                <a class="picDisplayBox-detail" href="./details.html">
+                                    <div class="realPic" id="picB">
+                                    </div>
+                                </a>
+                                <div class="picDisplayBox-item">
+                                    <h4 class="picDisplayBox-titie">Title</h4>
+                                    <p>discription</p>
+                                    <div class="box-body-Btn">
+                                        <button type="button" id="modifyBtn" onclick="modifyPhoto()">修改</button>
+                                        <button type="button" id="deleteBtn" onclick="deletePhoto()">删除</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box-body-myItem">
+                                <a class="picDisplayBox-detail" href="./details.html">
+                                    <div class="realPic" id="picC">
+                                    </div>
+                                </a>
+                                <div class="picDisplayBox-item">
+                                    <h4 class="picDisplayBox-titie">Title</h4>
+                                    <p>discription</p>
+                                    <div class="box-body-Btn">
+                                        <button type="button" id="modifyBtn" onclick="modifyPhoto()">修改</button>
+                                        <button type="button" id="deleteBtn" onclick="deletePhoto()">删除</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box-body-myItem">
+                                <a class="picDisplayBox-detail" href="./details.html">
+                                    <div class="realPic" id="picD">
+                                    </div>
+                                </a>
+                                <div class="picDisplayBox-item">
+                                    <h4 class="picDisplayBox-titie">Title is very longgggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg</h4>
+                                    <p>discription is very longggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg</p>
+                                    <div class="box-body-Btn">
+                                        <button type="button" id="modifyBtn" onclick="modifyPhoto()">修改</button>
+                                        <button type="button" id="deleteBtn" onclick="deletePhoto()">删除</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--//box-body-myphotos-ends-here-->
+                        <div class="turnPage">
+                            <a href="#"><</a> <span>1</span> <a href="#">2</a> <a href="#">3</a> <a href="#">4</a> <a href="#">5</a> <a href="#">></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <footer class="copyright">
+                Copyright© by Xinran Duan. All Rights Reserved. 备案号：沪ORZ备18307130295号-16
+            </footer>  
+        </div>
+    </body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>TravelPic - 向世界分享你的旅行记忆</title>
+        <meta name="description" content="login page">
+        <meta name="author" content="Xinran Duan">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="./src/css/reset.css" rel="stylesheet" type="text/css">
+        <link href="./src/css/login.css" rel="stylesheet" type="text/css">
+        <script src="./src/js/login.js"></script>
+    </head>
+
+    <body>
+        <div id="root">
+            <div class="background"></div>
+            <header>
+               <div class="topNav">
+                    <a class="topButtonActive" href="index.html">登录</a>
+                    <a class="topButton" href="./src/html/register.html">注册</a>
+                </div> 
+            </header>
+            
+            <h1>TravelPic - 向世界分享你的旅行记忆</h1>
+            <div class="main">
+                <div class="formBody">
+                    <h2>用户登录</h2>
+                    <form action="./src/html/homepage.html" method="post" id="loginForm" class="loginForm">
+                        <input type="text" class="formElem" name="Username" placeholder="请输入账号" required>
+                        <span class="warning"></span>
+                        <input type="password" class="formElem" name="Password" placeholder="请输入密码" required>
+                        <span class="warning"></span>
+                        <div class="submit">
+                            <input class="submitButton" type="submit" value="登录" onclick="submitForm()">
+                        </div>
+                        <p class="toRegister">
+                            没有账号？<a class="jumpToRegister" href="./src/html/register.html">创建一个</a>
+                        </p>
+                    </form>
+                </div>
+            </div>
+
+            <footer class="copyright">
+                Copyright© by Xinran Duan. All Rights Reserved. 备案号：沪ORZ备18307130295号-16
+            </footer>
+        </div>
+    </body>
+</html>

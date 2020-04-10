@@ -8,8 +8,8 @@ This is Xinran Duan's project doc for Web pj1.
 
 - 姓名：段欣然
 - 学号：18307130295
-- Github 地址：
-- Github Pages 地址：
+- Github 地址：https://github.com/Anemoneiro/19ss-web-Project1-TravelPic/
+- Github Pages 地址：https://anemoneiro.github.io/19ss-web-Project1-TravelPic/
 - 开发编辑器：VS Code
 - 开发系统：Windows 10，分辨率1920*1280
 - 测试浏览器：Google Chrome，Firefox，Microsoft Edge

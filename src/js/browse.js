@@ -5,6 +5,9 @@ function click_Searchbtn() {
 function click_Hotbtn() {
     alert('已筛选热门内容');
 }
+function click_Filterbtn() {
+    alert('已筛选选择器内容');
+}
 
 var cityList={ 
 	China: ['Shanghai','Kunming','Beijing','Yantai'],
